@@ -18,15 +18,17 @@
   margin:0;
   padding:0;
 }
-
+/*全体*/
 main{
   font-family: verdana,Sans-serif;
   width:100%;
   padding-top:30px;
 }
-header{
-  height: 200px;
+.top-page, .main-top, .main-bottom{
+  width:90%;
+  margin:0 auto;
 }
+/*「top」画面のCSS*/
 .top-title{
   padding-bottom: 20px;
   font-size:25px;
@@ -47,10 +49,7 @@ header{
   background-color: black;
   color: white;
 }
-.top-page, .main-top, .main-bottom{
-  width:90%;
-  margin:0 auto;
-}
+/*「index」画面のCSS*/
 .index-title{
   font-size: 25px;
   padding-bottom: 15px;
@@ -67,9 +66,25 @@ header{
 }
 .books-wrap{
   display: flex;
-  
 }
+
+
+/*「index」＞新規投稿ここから*/
 .main-bottom{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.new-post{
+  padding-left: 30px;
+}
+.new-post p{
+  font-size:12px;
+  padding-bottom: 2px;
+  padding-top:15px;
+}
+.new-post-botton{
+  width:100px;
+  font-size:14px;
+}
+
