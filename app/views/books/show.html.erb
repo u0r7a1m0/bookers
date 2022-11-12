@@ -1,8 +1,13 @@
-  <h4>Title：</h4>
-  <%= f.text_field :title %>
+
+  <div class="show-top">
+
+    <div class="show-main">
+      <span class="flash-message"><%= flash[:notice] %></span>
+      
+      <p><b>Title: </b><%= @book.title %></p>
+      <p><b>Body: </b><%= @book.body %></p>
+    </div>
   
-  <h4>Body</h4>
-  <%= f.text_area :body %>
-<a href="#">edit</a>
-<a href="#">Back</a>
-<% end %>
+    <%= link_to 'Edit', edit_book_path,class:"link edit-link" %>
+    <%= link_to 'Back', books_path,class:"link back-link" %>
+  </div>

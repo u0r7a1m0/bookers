@@ -9,13 +9,16 @@
           <th>Title</th>
           <th>Body</th>
         </tr>
+        <% @books.each do |book|%>
         <tr>
-          <td>ああああああああ</td>
-          <td>ああああああ</td>
-          <td><a href="#">show</a></td>
-          <td><a href="#">edit</a></td>
-          <td><a href="#">destroy</a></td>
+          <td class="table-book-title"><%=book.title%></td>
+          <td class="table-book-body"><%=book.body%></td>
+          
+          <td class="table-botton"><%= link_to 'show',book_path(book.id) %></td>
+          <td class="table-botton"><%= link_to 'edit',edit_book_path(book.id) %></td>
+          <td class="table-botton"><%= link_to "destroy",book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %></td>
         </tr>
+        <%end%>
       </table>
     </div>
   </div>
@@ -23,7 +26,18 @@
 
 <!--投稿画面-->
   <div class="main-bottom">
-    <h2 class="new-book-title">New book</h2>
+  <div class="new-post">
+    <h2>New book</h2>
+    <%= form_with model:@book do |f| %>
+      <p>Title</p>
+      <%=f.text_field:title %>
+  
+      <p>Body</p>
+      <%=f.text_area:body %>
+      
+      <p><%=f.submit 'Create Book',class:"new-post-botton" %></p>
+    <% end %>
+  </div>
   </div>
 
 

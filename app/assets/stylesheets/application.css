@@ -24,7 +24,7 @@ main{
   width:100%;
   padding-top:30px;
 }
-.top-page, .main-top, .main-bottom{
+.top-page, .main-top, .main-bottom, .show-top{
   width:90%;
   margin:0 auto;
 }
@@ -55,28 +55,45 @@ main{
   padding-bottom: 15px;
 }
 
-.book-title, .book-body{
-  font-size:12px;
-}
-.book-title{
-  padding-left:70px;
-}
-.book-body{
-  padding-left: 200px;
-}
 .books-wrap{
   display: flex;
 }
-
+th{
+  font-size:14px;
+  padding-bottom: 10px;
+}
+tr{
+  font-size:12px;
+}
+td{
+  padding-bottom: 10px;
+}
+.table-book-title{
+  width:160px;
+  padding-right:10px;
+}
+.table-book-body{
+  width:360px;
+}
+.table-botton{
+  padding-right: 10px
+}
+.table-botton:last-child{
+  padding-right: 0
+}
+.table-botton a{
+  text-align: underline;
+  color: black;
+}
+.table-botton a:hover{
+  background-color: black;
+  color: white;
+}
 
 /*「index」＞新規投稿ここから*/
 .main-bottom{
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.new-post{
-  padding-left: 30px;
 }
 .new-post p{
   font-size:12px;
@@ -87,4 +104,37 @@ main{
   width:100px;
   font-size:14px;
 }
-
+/*「show」画面のCSSここから*/
+.show-top{
+  font-family: verdana,Sans-serif;
+  width:90%;
+  margin:0 auto;
+}
+.show-main{
+  padding-left: 50px;
+  padding-top:50px;
+}
+.link{
+  text-decoration: underline;
+  font-size:15px;
+}
+.link:hover{
+  background-color: black;
+  color: white;
+}
+.back-link{
+  color: gray;
+}
+.edit-link{
+  color: black;
+}
+.show-main p{
+  padding-bottom: 30px;
+  font-size:15px;
+}
+.flash-message{
+  color: green;
+  font-size:14px;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
