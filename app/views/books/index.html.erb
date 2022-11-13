@@ -1,4 +1,5 @@
 <main>
+  <div class="flash-message"><%= flash[:destroy] %></div>
   <div class="main-top">
     <h1 class="index-title">Books</h1>
 <!--一覧画面-->
@@ -16,7 +17,7 @@
           
           <td class="table-botton"><%= link_to 'show',book_path(book.id) %></td>
           <td class="table-botton"><%= link_to 'edit',edit_book_path(book.id) %></td>
-          <td class="table-botton"><%= link_to "destroy",book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %></td>
+          <td class="table-botton"><%= link_to 'Destroy',book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %></td>
         </tr>
         <%end%>
       </table>
