@@ -22,12 +22,9 @@
 main{
   font-family: verdana,Sans-serif;
   width:100%;
-  padding-top:30px;
+  margin:35px;
 }
-.top-page, .main-top, .main-bottom, .show-top{
-  width:90%;
-  margin:0 auto;
-}
+
 /*「top」画面のCSS*/
 .top-title{
   padding-bottom: 20px;
@@ -51,7 +48,7 @@ main{
 }
 /*「index」画面のCSS*/
 .index-title{
-  font-size: 25px;
+  font-size: 26px;
   padding-bottom: 15px;
 }
 
@@ -59,11 +56,11 @@ main{
   display: flex;
 }
 th{
-  font-size:14px;
+  font-size:13px;
   padding-bottom: 10px;
 }
 tr{
-  font-size:12px;
+  font-size:13px;
 }
 td{
   padding-bottom: 10px;
@@ -92,31 +89,55 @@ td{
 
 /*「index」＞新規投稿ここから*/
 .main-bottom{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main-bottom h2{
+  font-size:19px;
 }
 .new-post p{
-  font-size:12px;
-  padding-bottom: 2px;
-  padding-top:15px;
+  font-size:14px;
+  margin-bottom: 2px;
+  margin-top:15px;
 }
 .new-post-botton{
   width:100px;
   font-size:14px;
 }
+/*「index」エラー関連ここから*/
+.error-square{
+  list-style: square;
+  background-color: #EEEEEE	;
+}
+.error-all{
+  width:450px;
+  margin-top:15px;
+  /*border:1px solid red;*/
+}
+.error-all h3{
+  color: white;
+  background-color: #CC0000	;
+  font-size:13px;
+  padding: 10px 0 10px 20px;
+}
+.error-area ul{
+  padding:30px 60px;
+  font-size:12px;
+}
+.error-area li{
+  margin-bottom: 5px;
+}
 /*「show」画面のCSSここから*/
 .show-top{
   font-family: verdana,Sans-serif;
-  width:90%;
-  margin:0 auto;
 }
 .show-main{
-  padding-left: 50px;
-  padding-top:50px;
+  padding-left: 35px;
+  margin-top:30px;
 }
 .link{
   text-decoration: underline;
-  font-size:15px;
+  font-size:14px;
 }
 .link:hover{
   background-color: black;
@@ -124,17 +145,45 @@ td{
 }
 .back-link{
   color: gray;
+  margin-left: 10px;
 }
-.edit-link{
+.edit-link,.show-link{
   color: black;
+}
+.link-border{
+  border-right:1px solid black;
+  padding-right:5px;
+  font-size: 11px;
 }
 .show-main p{
   padding-bottom: 30px;
-  font-size:15px;
+  font-size:13px;
 }
 .flash-message{
   color: green;
+  font-size:13px;
+  margin-bottom: 30px;
+
+}
+/*「edit」画面のCSSここから*/
+.edit-top h1{
+  font-size:25px;
+  margin-bottom: 10px;
+}
+.edit-main p{
   font-size:14px;
-  padding-top:50px;
-  padding-bottom: 50px;
+  padding-bottom: 2px;
+}
+.edit-main{
+  margin-top:20px;
+}
+.edit-title{
+  margin-bottom: 14px;
+}
+.edit-body{
+  margin-bottom: 14px;
+}
+.update-post-botton{
+  margin-bottom: 10px;
+  width: 100px;
 }

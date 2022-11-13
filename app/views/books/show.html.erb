@@ -1,13 +1,17 @@
-
+<main>
   <div class="show-top">
 
     <div class="show-main">
-      <span class="flash-message"><%= flash[:notice] %></span>
-      
+    <div class="flash-message"><%= flash[:success] %></div>
+    <div class="flash-message"><%= flash[:update] %></div>
+
       <p><b>Title: </b><%= @book.title %></p>
       <p><b>Body: </b><%= @book.body %></p>
     </div>
   
-    <%= link_to 'Edit', edit_book_path,class:"link edit-link" %>
+    <span class="link-border">
+      <%= link_to 'Edit', edit_book_path,class:"link edit-link" %>
+    </span>
     <%= link_to 'Back', books_path,class:"link back-link" %>
   </div>
+</main>
